@@ -4,9 +4,6 @@ const getArgs = () => {
 };
 
 const alarmBeep = (arr) => {
-  if (arr === undefined) {
-    return;
-  }
   for (const item of arr) {
     if (item < 0 || isNaN(item) === true) {
     continue;
@@ -18,4 +15,4 @@ const alarmBeep = (arr) => {
   }
 };
 
-alarmBeep(getArgs());
+alarmBeep(getArgs()); 
